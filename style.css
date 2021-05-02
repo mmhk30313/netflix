@@ -1,0 +1,505 @@
+*{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+    min-width: 340px;
+}
+section{
+    color: rgb(235, 224, 224);
+    width: 100%;
+    height: auto;
+    background-image: url(header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section, .wrapper, .second-prt, .third-prt, .fourth-prt{
+    border-bottom: 8px solid #222;
+}
+.hdr-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo-txt{
+    margin: 0 0 0 4%;
+}
+#s-btn{
+   margin-right: 4%;
+}
+#s-btn button{
+    padding: 8px 20px;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color: #f30f20;
+    border-radius: 3px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 3%; 
+}
+h2{
+    font-size: 26px;
+    /* margin-top: 0; */
+    font-weight: 500;
+}
+h3{
+    font-size: 19px;
+    margin-top: 2%;
+    font-weight: 400;
+}
+.card{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 130px 0;
+}
+
+.mail{
+    border: none;
+    font-size: medium;
+    background-image: linear-gradient(to right, rgb(250, 233, 233) , rgb(240, 229, 229), white);
+}
+input:focus{
+    outline: none;
+    
+}
+.btn{
+    color: white;
+    background-color: #f30f20;
+    border-right: none;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 10px 24px;
+    font-weight: 500;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(247, 26, 26);
+}
+@media only screen and (min-width: 950px) {
+    /* .card{
+        padding: 90px;
+    } */
+    .card-form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mail{
+        width: 470px;
+        height: 60.5px;
+    }
+    .btn{
+        width: 240px;
+        height: 63px;
+        border-left: 1px solid rgb(92, 89, 89);
+        border-radius: 0;
+        font-size: 24px;
+    }
+} 
+@media only screen and (max-width: 949px ) and (min-width: 749px){
+    .btn{
+        width: 157px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 14px;
+        border-left: none;
+        border-radius: 2px;
+    }
+    .card-form{
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mail{
+        width: 500px;
+        height: 59px;
+    }
+}
+@media only screen and (max-width: 949px ) and (min-width: 340px) , (max-width: 339px) {
+    
+    .motion{
+        width: 70%;
+        
+    }
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3 [col] 30% );
+    grid-template-rows: 1fr 1fr;
+    padding: 5% 2% 2% 2%;
+}
+.c {
+    grid-column: 1/ span 2;
+    grid-row: row 2;
+    padding: 5% 12% 0 9%;
+}
+.d{
+    grid-column: col 3 / span 2;
+    grid-row: row 2;
+    display: grid;
+}
+.f {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+.f video{
+    display: block;
+    width: 100%;
+    max-width: 94%;
+    padding: 1% 0 0 6%;
+}
+.g {
+    grid-column: 1/3;
+    grid-row: 2;
+    position: relative;
+}
+.g img {
+    width: 100%;  
+}
+@media ( max-width: 949px ) and ( min-width: 580px ) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+.second-prt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5% 0 5% 0;
+}
+.box-two {
+    grid-column: 3 / 5;
+    padding: 15% 7% 0 0;
+}
+.box-one{
+    grid-column: 1 / 3;
+    display: grid;
+    position: relative;
+    align-items: center;
+}
+.box-one img{
+    width: 85%;
+}
+.motion{
+    background-color: black;
+    height: 19%;
+    border-radius: 15px;
+    border: 2px solid #303030;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15%;
+    top: 69%;
+    text-align: left;
+    padding: 1% 0 1% 0;
+}
+@media ( max-width: 1096px ) and ( min-width: 949px ){
+    .box-two{
+        padding: 9% 0 9% 5%;
+    }
+    .motion{
+        height: 17%;
+        top: 63%;
+    }
+}
+.one{
+    width: 20%;
+    margin-right: 2%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.one img, .three img{
+    height: 100%;
+}
+.two{
+    width: 60%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;  
+}
+.three{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    color: #0071EB;
+}
+.third-prt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5% 3% 6% 6%;
+    justify-content: center;
+    align-items: center;
+}
+.txt-prt{
+    grid-column: 1 / 3;
+    /* justify-content: center; */
+    padding-right: 5%;
+}
+.movie-prt{
+    grid-column: 3 / 5;
+    display: grid;  
+}
+.movie-prt-vid{
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+.movie-prt-vid video{
+    width: 63%;
+    padding: 8% 20% 0% 18%;
+}
+.movie-prt-frm{
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+.movie-prt-frm img{
+    width: 100%;
+    position: relative;
+}
+@media only screen and (max-width: 750px) and (min-width: 550px) {
+    .btn{
+        width: 157px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 14px;
+        border-left: none;
+        border-radius: 2px;
+    }
+    .card-form{
+        width: 100%;
+    }
+    .mail{
+        width: 500px;
+        height: 45px;
+    }
+    
+    .motion{
+        width: 70%;
+        
+    }
+}
+@media ( max-width: 949px ) and ( min-width: 550px ), ( max-width: 549px ) and ( min-width: 350px ), ( max-width: 349px ){
+    .wrapper, .third-prt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .second-prt{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .c, .box-two{
+        padding: 1% 3% 3% 3%;
+    }
+    .d{
+        padding: 0 20% 0 20%;
+    }
+    .box-one{
+        margin: -4% 0 0 15%;
+    }
+    .box-one img{
+        width: 80%;
+    }
+    .motion{
+        height: 18%;
+        left: 4%;
+        top: 70%;
+        font: 16px;
+        width: 70%;
+    }
+    .one{
+        width: 17%;
+    }
+    .movie-prt{
+        padding: 0 10%;
+    }
+}
+.fourth-prt{
+    padding: 3% 5% 8% 5%;
+    text-align: center;
+    border-bottom: 8px solid #303030;
+    position: relative;
+}
+.proshno{
+    text-align: center;
+    display: inline-block;
+}
+.proshno ul{
+    list-style: none;
+    padding-inline-start: 0;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    
+}
+.proshno li{
+    width: 100%;
+    color: white;
+}
+.plus-icon{
+    height: 50%;
+    fill: white;
+    font-weight: 800;
+    transform: translateY(-87%);
+    right: 2%;
+    position: absolute;
+}
+.proshno-button {
+     cursor: pointer;
+     outline: none;
+     margin-bottom: 10px;
+     display: inline-flex;
+     width: 100%;
+     color: white;
+     border: none;
+     background-color: #303030;
+     padding: 0 3%;
+     position: relative;
+}
+.proshno .card-form{
+    text-align: center;
+    
+}
+.lst-crd{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media only screen and (max-width: 549px ) and (min-width: 340px) , (max-width: 339px){
+    .card-form{
+        width: 100%;
+    }
+    .mail{
+        width: 80%;
+        height: 45px;
+    }
+    .btn{
+        width: 157px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 14px;
+        border-left: none;
+        border-radius: 2px;
+    }
+}
+@media only screen and (max-width: 949px ) and (min-width: 340px) , (max-width: 339px){
+    .membership{
+        padding: 0 12% 0;
+        margin-top: 0;
+    }
+}
+@media ( max-width: 579px ) and (min-width: 340px ), (max-width: 339px)  {
+    h1{
+        font-size: 27px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .card{
+        padding: 3% 0;
+    }
+    .two{
+        font-size: 12px;
+    }
+    .motion{
+        width: 70%;
+    }
+    .fourth-prt{
+        padding: 8% 0 8% 0;
+    }
+}
+@media ( max-width: 949px ) and (min-width: 548px ){
+    .fourth-prt{
+        padding: 8% 10% 10% 10%;
+    }
+}
+@media ( max-width: 949px ) and (min-width: 740px ){
+    h3{
+        font-size: 23px;
+    }
+    .emil input{
+        width: 500px;
+    }
+}
+footer{
+    position: relative;
+    padding: 5% 5% 0 8%;
+}
+@media ( min-width: 949px ){
+    footer{
+        margin: 0 70px;
+        padding: 5% 0 0 8%;
+    }
+}
+.lst-site{
+    width: 90%;
+    /* margin: 0 auto; */
+}
+.foot-container{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+    font-size: small;
+    width: 100%;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-left: 0;
+    padding: 2% 0;
+}
+.flex-item{
+    min-width: 105px;
+    width: 25%;
+    padding: 9px 0;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-left: 0;
+}
+@media ( max-width: 740px ){
+    .flex-item{
+        width: 33%;
+    }
+}
+@media ( max-width: 500px ){
+    .flex-item{
+        width: 50%;
+    }
+}
+.footer-mid, .lst-one{
+    text-decoration: none;
+    color: rgb(129, 122, 122);
+}
+.footer-mid:hover{
+    text-decoration: underline;
+}
+.lst-one{
+    font-size: small;
+    padding-bottom: 30px;
+}
